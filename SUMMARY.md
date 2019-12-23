@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Install Instructions](install-instructions.md)
+* [Features](features.md)
+* [Install Instructions](aibrain-graph/install-instructions.md)
 
 ## AIBrain Graph
 

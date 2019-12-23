@@ -22,5 +22,11 @@ Alternatively, for a quick introduction, you can check the following feature vid
 
 ## What's TopDown Engine?
 
+The TopDown Engine is a complete solution for top-down games, [available on the Unity Asset Store](https://assetstore.unity.com/packages/templates/systems/topdown-engine-89636?aid=1011lHJn). Official documentation can be found [on MoreMountains website](https://topdown-engine-docs.moremountains.com/).
+
+For a quick feature walkthrough, please check the video below:
+
+{% embed url="https://www.youtube.com/watch?v=0NTEaEY2Wv8&feature=emb\_logo" %}
+
 
 

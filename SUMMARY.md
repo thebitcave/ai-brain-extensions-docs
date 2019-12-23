@@ -13,3 +13,7 @@
 
 * [Untitled](aibrain-debugger/untitled.md)
 
+## Master/Slave Brains
+
+* [Untitled](master-slave-brains/untitled.md)
+

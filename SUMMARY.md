@@ -6,14 +6,17 @@
 
 ## AIBrain Graph
 
+* [The AIBrain Graph System](aibrain-graph/the-aibrain-graph-system.md)
+* [Node Reference](aibrain-graph/node-reference.md)
+* [Creating Custom Nodes](aibrain-graph/creating-custom-nodes.md)
 * [Corgi Engine - Getting Started Tutorial](aibrain-graph/corgi-engine-getting-started-tutorial.md)
 * [TopDown Engine - Getting Started Tutorial](aibrain-graph/topdown-engine-getting-started-tutorial.md)
 
 ## AIBrain Debugger
 
-* [Untitled](aibrain-debugger/untitled.md)
+* [The AIBrain Debugger](aibrain-debugger/untitled.md)
 
 ## Master/Slave Brains
 
-* [Untitled](master-slave-brains/untitled.md)
+* [Using Master/Slave AIBrains](master-slave-brains/untitled.md)
 

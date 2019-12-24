@@ -56,31 +56,39 @@ A Transition node should always have an _AIDecision_ attached
 
 ### AI Action Nodes
 
-Action nodes are a graph representation of _AI Action_ components.
+Action nodes are graph representations of _AIAction_ components. They come with a single output element that should be connected to the state. This will tell the state itself that this action should be executed.
 
-They comes with a single output element that should be connected to the state. This will tell the state itself that this action should be executed.
-
-A node may have some parameters, corresponding with the MMTools _AIAction_ component.
-
-The _Label_ field corresponds to the _AIAction Label_ attribute.
-
-* _Decision_: a single _AI Decision Node_ that will let the AI Brain exit from the actual state
+A node may have some parameters, corresponding with the Corgi/TopDown engine _AIAction_ components.
 
 If you wish, you can rename the node by right-clicking the header and choosing _Rename_ but this won't affect the AI generation.
+
+#### Inputs
+
+This node has no input connections.
+
+#### Outputs
+
+* **Output** \(_Action_ connection\): a single _AI Decision Node_ that will let the AI Brain exit from the actual state
 
 ![The Action node for the AIActionDoNothing](../.gitbook/assets/node_reference_003.png)
 
 ### AI Decision Nodes
 
-Decision nodes are a graph representation of _AI Decision_ components.
+Decision nodes are a graph representation of _AIDecision_ components. They come with a single output element that should be connected to a state transition. This will define the condition to exit the state.
 
-They comes with a single output element that should be connected to a state transition. This will define the condition to exit the state.
-
-A node may have some parameters, corresponding with the MMTools _AIDecision_ component.
+A node may have some parameters, corresponding with the Corgi/TopDown engine _AIDecision_ components.
 
 The _Label_ field corresponds to the _AIDecision Label_ attribute.
 
 If you wish, you can rename the node by right-clicking the header and choosing _Rename_ but this won't affect the AI generation.
+
+#### Inputs
+
+This node has no input connections.
+
+#### Outputs
+
+* **Output** \(_Decision_ connection\): a single _AIDecision Node_ that will let the AI Brain exit from the actual state
 
 ![The Decision node for the AIDecisionHealth](../.gitbook/assets/node_reference_004.png)
 

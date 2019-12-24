@@ -15,7 +15,7 @@ Additionally, when you work with a Subgraph, you have access to:
 
 ### AI Brain State Nodes
 
-This node represents a single state in the MMTools _AIBrain_.
+A **State** node represents a single state in the MMTools _AIBrain_.
 
 Each state should be given a unique name by right-clicking the header and choosing _Rename_.
 
@@ -34,7 +34,7 @@ The _Set as starting state_ button will set the state as the first one in the MM
 
 ### AI Transition Nodes
 
-This node represents a single transition from a state in the MMTools _AI Brain_: a state can have more than one transition.
+A **Transition** node represents a single transition from a state in the MMTools _AI Brain_: a state can have more than one transition.
 
 If you wish, you can rename the node by right-clicking the header and choosing _Rename_ but this won't affect the AI generation.
 
@@ -56,7 +56,7 @@ A Transition node should always have an _AIDecision_ attached
 
 ### AI Action Nodes
 
-Action nodes are graph representations of _AIAction_ components. They come with a single output element that should be connected to the state. This will tell the state itself that this action should be executed.
+**Action** nodes are graph representations of _AIAction_ components. They come with a single output element that should be connected to the state. This will tell the state itself that this action should be executed.
 
 A node may have some parameters, corresponding with the Corgi/TopDown engine _AIAction_ components.
 
@@ -74,7 +74,7 @@ This node has no input connections.
 
 ### AI Decision Nodes
 
-Decision nodes are a graph representation of _AIDecision_ components. They come with a single output element that should be connected to a state transition. This will define the condition to exit the state.
+**Decision** nodes are a graph representation of _AIDecision_ components. They come with a single output element that should be connected to a state transition. This will define the condition to exit the state.
 
 A node may have some parameters, corresponding with the Corgi/TopDown engine _AIDecision_ components.
 
@@ -94,18 +94,23 @@ This node has no input connections.
 
 ### AI Brain Subgraph Nodes
 
-A subgraph node is a special state node, that lets you create a subgraph with all decision/action logic. You can create a subgraph asset and assign it to the _Subgraph_ field.
+A **Subgraph** node is a special state node, that lets you create a inner state/decision/action logic. 
 
 It can be set as a starting node \(in this case its inner starting node will be used\).
 
 ![An empty Subgraph node](../.gitbook/assets/node_reference_005.png)
 
-To connect the subgraph node to the main brain graph you can use:
-
-* _AI State In Nodes_: that will create dynamic entry point to the subgraph node
-* _AI Transition Out Nodes_: that will create dynamic output from the subgraph node
+You can create a subgraph asset and assign it to the _Subgraph_ field.
 
 ![A Subgraph node with a brain graph assigned](../.gitbook/assets/node_reference_005_a.png)
+
+#### Inputs
+
+* **State In** __\(_State_ connection\): a dynamically generated list of state connections \(see _AI State In Nodes_\)
+
+**Outputs**
+
+* **Transition Out** \(_Transition_ connection\): a dynamically generated list of transition connections \(see _AI Transition Out Nodes_\)
 
 ### AI State In Nodes
 

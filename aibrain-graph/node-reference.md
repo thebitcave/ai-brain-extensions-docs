@@ -38,8 +38,8 @@ A **Transition** node represents a single transition from a state in the MMTools
 
 If you wish, you can rename the node by right-clicking the header and choosing _Rename_ but this won't affect the AI generation.
 
-{% hint style="info" %}
-A Transition node should always have an _AIDecision_ attached
+{% hint style="warning" %}
+A Transition node should always have a connected _AIDecision_ node
 {% endhint %}
 
 #### Inputs
@@ -104,6 +104,10 @@ You can create a subgraph asset and assign it to the _Subgraph_ field.
 
 ![A Subgraph node with a brain graph assigned](../.gitbook/assets/node_reference_005_a.png)
 
+{% hint style="warning" %}
+You cannot create nested subgraphs \(i.e.: you cannot add a subgraph inside a subgraph\)
+{% endhint %}
+
 #### Inputs
 
 * **State In** __\(_State_ connection\): a dynamically generated list of state connections \(see _AI State In Nodes_\)
@@ -114,17 +118,37 @@ You can create a subgraph asset and assign it to the _Subgraph_ field.
 
 ### AI State In Nodes
 
-This node exposes an _AI Brain State_ node inside a subgraph to the parent brain graph.
+The **AI State In** node exposes an _AI Brain State_ node inside a subgraph to the parent brain graph.
 
 ![The State In node](../.gitbook/assets/node_reference_006.png)
 
+{% hint style="warning" %}
+_State In_ nodes are only available in a subgraph.
+{% endhint %}
+
+#### Inputs
+
+This node has no input connections.
+
+#### Outputs
+
+* **Input** \(_State_ connection\): this node will generate a _State In_ connection in the subgraph node of the parent graph
+
 ### AI Transition Out Nodes
 
-This node exposes an _AI Transition_ node connection inside a subgraph to the parent brain graph.
+The **AI Transition Out** node exposes an _AI Transition_ node connection inside a subgraph to the parent brain graph.
 
 ![The Transition Out node](../.gitbook/assets/node_reference_007.png)
 
+{% hint style="warning" %}
+_Transition Out_ nodes are only available in a subgraph.
+{% endhint %}
 
+#### Inputs
 
+* **Output** \(_Transition_ connection\): this node will generate a _Transition Out_ connection in the subgraph node of the parent graph
 
+#### Outputs
+
+This node has no output connections.
 

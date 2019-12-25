@@ -23,12 +23,12 @@ The _Set as starting state_ button will set the state as the first one in the MM
 
 #### Inputs
 
-* **States In** \(multiple _State_ connections\): a list of entry points from other states transitions
-* **Actions** \(multiple _Action_ connections\): a list of actions that should be performed when entering the state itself
+* **States In** \(_State_ connection\): a list of entry points from other states transitions
+* **Actions** \(_Action_ connection\): a list of actions that should be performed when entering the state itself
 
 #### Outputs
 
-* **Transitions** \(multiple _Transition_ connections\): a list of transitions that will let the system exit from this state 
+* **Transitions** \(_Transition_ connection\): a list of transitions that will let the system exit from this state 
 
 ![The State node](../.gitbook/assets/node_reference_001.png)
 
@@ -38,19 +38,19 @@ A **Transition** node represents a single transition from a state in the MMTools
 
 If you wish, you can rename the node by right-clicking the header and choosing _Rename_ but this won't affect the AI generation.
 
-{% hint style="warning" %}
-A Transition node should always have a connected _AIDecision_ node
+{% hint style="info" %}
+A Transition node should always have an _AIDecision_ attached
 {% endhint %}
 
 #### Inputs
 
-* **Decision** \(single _Decision_ connection\): a single _AI Decision Node_ that will let the AI Brain exit from the actual state
-* **Input** \(single _Transition_ connection\): a single connection from the _AI Brain State_
+* **Decision** \(_Decision_ connection\): a single _AI Decision Node_ that will let the AI Brain exit from the actual state
+* **Input** \(_Transition_ connection\): a single connection from the _AI Brain State_
 
 #### Outputs
 
-* **True State** \(single _State_ connection\): a connection to the state that should be activated when the decision is true
-* **False State** \(single _State_ connection\): a connection to the state that should be activated when the decision is false
+* **True State** \(_State_ connection\): a connection to the state that should be activated when the decision is true
+* **False State** \(_State_ connection\): a connection to the state that should be activated when the decision is false
 
 ![The Transition node](../.gitbook/assets/node_reference_002.png)
 
@@ -68,7 +68,7 @@ This node has no input connections.
 
 #### Outputs
 
-* **Output** \(multiple _Action_ connections\): a single _AI Decision Node_ that will let the AI Brain exit from the actual state
+* **Output** \(_Action_ connection\): a single _AI Decision Node_ that will let the AI Brain exit from the actual state
 
 ![The Action node for the AIActionDoNothing](../.gitbook/assets/node_reference_003.png)
 
@@ -88,7 +88,7 @@ This node has no input connections.
 
 #### Outputs
 
-* **Output** \(multiple _Decision_ connections\): a single _AIDecision Node_ that will let the AI Brain exit from the actual state
+* **Output** \(_Decision_ connection\): a single _AIDecision Node_ that will let the AI Brain exit from the actual state
 
 ![The Decision node for the AIDecisionHealth](../.gitbook/assets/node_reference_004.png)
 
@@ -104,51 +104,27 @@ You can create a subgraph asset and assign it to the _Subgraph_ field.
 
 ![A Subgraph node with a brain graph assigned](../.gitbook/assets/node_reference_005_a.png)
 
-{% hint style="warning" %}
-You cannot create nested subgraphs \(i.e.: you cannot add a subgraph inside a subgraph\)
-{% endhint %}
-
 #### Inputs
 
-* **State In** __\(list of multiple _State_ connections\): a dynamically generated list of state connections \(see _AI State In Nodes_\)
+* **State In** __\(_State_ connection\): a dynamically generated list of state connections \(see _AI State In Nodes_\)
 
 **Outputs**
 
-* **Transition Out** \(list of single _Transition_ connections\): a dynamically generated list of transition connections \(see _AI Transition Out Nodes_\)
+* **Transition Out** \(_Transition_ connection\): a dynamically generated list of transition connections \(see _AI Transition Out Nodes_\)
 
 ### AI State In Nodes
 
-The **AI State In** node exposes an _AI Brain State_ node inside a subgraph to the parent brain graph.
+This node exposes an _AI Brain State_ node inside a subgraph to the parent brain graph.
 
 ![The State In node](../.gitbook/assets/node_reference_006.png)
 
-{% hint style="warning" %}
-_State In_ nodes are only available in a subgraph.
-{% endhint %}
-
-#### Inputs
-
-This node has no input connections.
-
-#### Outputs
-
-* **Input** \(single _State_ connection\): this node will generate a _State In_ connection in the subgraph node of the parent graph
-
 ### AI Transition Out Nodes
 
-The **AI Transition Out** node exposes an _AI Transition_ node connection inside a subgraph to the parent brain graph.
+This node exposes an _AI Transition_ node connection inside a subgraph to the parent brain graph.
 
 ![The Transition Out node](../.gitbook/assets/node_reference_007.png)
 
-{% hint style="warning" %}
-_Transition Out_ nodes are only available in a subgraph.
-{% endhint %}
 
-#### Inputs
 
-* **Output** \(single _Transition_ connection\): this node will generate a _Transition Out_ connection in the subgraph node of the parent graph
 
-#### Outputs
-
-This node has no output connections.
 

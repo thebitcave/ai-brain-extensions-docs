@@ -14,7 +14,7 @@ On the Asset Store you will find the latest stable version:
 1. Install the latest version of [Corgi Engine](https://assetstore.unity.com/packages/templates/systems/corgi-engine-2d-2-5d-platformer-26617?aid=1011lHJn) on your project
 2. Install the extension from the [Unity Asset Store](https://assetstore.unity.com/packages/tools/ai/ai-brain-extensions-for-corgi-engine-158372?aid=1011lHJn)
 
-#### 2. From the development repository on GitHub
+#### 2. From the Development Repository on GitHub
 
 Downloading the plugin on GitHub will give you access to the latest \(and, sometimes, less stable\) features. You will have to follow these steps:
 
@@ -32,7 +32,7 @@ On the Asset Store you will find the latest stable version:
 1. Install the latest version of [TopDown Engine](https://assetstore.unity.com/packages/templates/systems/topdown-engine-89636?aid=1011lHJn) on your project
 2. Install the extension from the [Unity Asset Store](https://assetstore.unity.com/packages/tools/ai/ai-brain-extensions-for-topdown-engine-158632?aid=1011lHJn)
 
-#### 2. From the development repository on GitHub
+#### 2. From the Development Repository on GitHub
 
 Downloading the plugin on GitHub will give you access to the latest \(and, sometimes, less stable\) features. You will have to follow these steps
 

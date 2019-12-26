@@ -18,11 +18,11 @@ A Master can also be a Slave and listen to events \(even those dispatched by its
 The **BrainMasterAbility** component lets you send state change commands to slave brains through a dedicated channel: usually this is achieved through an _AIActionChangeAIBrainStateCommand_ but you can access the _SendCommand_ method:
 
 ```csharp
-SendCommand(string channelName, string newStateName, Transform target)
+SendCommand(string channelName, string newStateName, Transform target = null)
 ```
 
 * _channelName_ is used to filter who will receive and execute the command
-* _stateName_ is the state the AIBrain should transition in
+* _newStateName_ is the state the AIBrain should transition in
 * _target_ is the AIBrain target \(if any\)
 
 #### The Brain Slave Ability
@@ -34,6 +34,15 @@ The slave can listen to one or more channels.
 {% endhint %}
 
 Whenever an event is received, the slave will try to change the AIBrain to the new state.
+
+As an alternative, the state change can be also forced through the TransitionToState\(\) method:
+
+```csharp
+TransitionToState(string newStateName, Transform target = null)
+```
+
+* _newStateName_ is the state the AIBrain should transition in
+* _target_ is the AIBrain target \(if any\)
 
 
 

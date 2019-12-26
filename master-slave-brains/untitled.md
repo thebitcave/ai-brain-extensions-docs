@@ -13,13 +13,27 @@ The two main actors involved in this system are:
 A Master can also be a Slave and listen to events \(even those dispatched by itself\).
 {% endhint %}
 
-####  The Brain Master
+####  Brain Master Ability
 
-\[TBD\]
+The **BrainMasterAbility** component lets you send state change commands to slave brains through a dedicated channel: usually this is achieved through an _AIActionChangeAIBrainStateCommand_ but you can access the _SendCommand_ method:
 
-#### The Brain Slave
+```csharp
+SendCommand(string channelName, string newStateName, Transform target)
+```
 
-\[TBD\]
+* _channelName_ is used to filter who will receive and execute the command
+* _stateName_ is the state the AIBrain should transition in
+* _target_ is the AIBrain target \(if any\)
+
+#### The Brain Slave Ability
+
+The **BrainSlaveAbility** component is used to receive state change commands through a dedicated channel.
+
+{% hint style="info" %}
+The slave can listen to one or more channels.
+{% endhint %}
+
+Whenever an event is received, the slave will try to change the AIBrain to the new state.
 
 
 

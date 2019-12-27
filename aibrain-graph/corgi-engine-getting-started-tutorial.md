@@ -113,7 +113,7 @@ The last step to complete the brain graph is to connect the transitions _True/Fa
 
 ![](../.gitbook/assets/corgi_staring_tutorial_006.png)
 
-### Generating the Corgi AI Brain
+### Generating the Character AIBrain System
 
 We are now ready to add the brain graph to a gameObject and generate all the Corgi AI structure: we have two options for this.
 

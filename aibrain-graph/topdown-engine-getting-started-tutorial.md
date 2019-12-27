@@ -141,6 +141,6 @@ The _AI Brain Pluggable_ generates all Corgi AI system at runtime from a list of
 ![](../.gitbook/assets/topdown_tutorial_008.png)
 
 {% hint style="warning" %}
-The AI Brain Pluggable is an extension of the regular TopDown Engine AI Brain, so you have to keep it in your gameObject
+The AI Brain Pluggable is an extension of the regular TopDown Engine AI Brain, so you'll have to keep it in your gameObject
 {% endhint %}
 

@@ -124,11 +124,13 @@ The _AI Brain Generator_ component adds a static brain structure to your charact
 1. Enable the _RetroSwordsmanGenerated_ gameObject
 2. Click the _Add Component_ button and select _The Bit Cave &gt; AI &gt; AI Brain Generator_
 3. Drag the _RetroSwordsman AIBrain_ we created above in the _AI Brain Graph_ field
-4. Click the _Generate_ button and you will get the full working Corgi AI system for the RetroSwordsman \(try comparing it with the original prefab\)
+4. Click the _Generate_ button and you will get the full working Corgi AI system for the _RetroSwordsman_ \(try comparing it with the original prefab\)
 
 ![](../.gitbook/assets/corgi_staring_tutorial_007.png)
 
-_Note: once you are happy with your brain, you can safely remove the AI Brain Generator component as it is not used during gameplay_
+{% hint style="info" %}
+Once you are happy with your brain, you can safely remove the AI Brain Generator component as it is not used during gameplay
+{% endhint %}
 
 #### AI Brain Pluggable
 
@@ -141,5 +143,7 @@ The _AI Brain Pluggable_ generates all Corgi AI system at runtime from a list of
 
 ![](../.gitbook/assets/corgi_staring_tutorial_008.png)
 
-_Note: the AI Brain Pluggable is an extension of the regular Corgi AI Brain, so you have to keep it in your gameObject_
+{% hint style="warning" %}
+The AI Brain Pluggable is an extension of the regular Corgi AI Brain, so you have to keep it in your gameObject
+{% endhint %}
 

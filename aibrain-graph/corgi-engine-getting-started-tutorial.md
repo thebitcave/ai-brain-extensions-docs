@@ -50,7 +50,9 @@ First of all, let's create the two states:
 3. Repeat the first two steps, creating another node called _Shooting_
 4. On the _Patrol_ node, click the _Set as starting state_ button: this will set the _Patrol_ node as the entry state in Corgi
 
-_Note: each state should have a unique name_
+{% hint style="warning" %}
+Each state should always have a unique name
+{% endhint %}
 
 ![](../.gitbook/assets/corgi_starting_tutorial_002.png)
 

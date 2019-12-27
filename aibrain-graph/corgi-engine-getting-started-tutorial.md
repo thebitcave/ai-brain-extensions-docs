@@ -48,7 +48,7 @@ First of all, let's create the two states:
 1. Right click on the AI Brain graph canvas and choose _AI &gt; Brain State_: this will create a state
 2. Right click on the node header and choose _Rename_. Rename the state _Patrol_ and select _Apply_
 3. Repeat the first two steps, creating another node called _Shooting_
-4. On the _Patrol_ node, click the _Set as starting state_ button: this will set the _Patrol_ node as the entry state in Corgi
+4. On the _Patrol_ node, click the _Set as starting state_ button: this will set the _Patrol_ node as the entry state in the character brain
 
 {% hint style="warning" %}
 Each state should always have a unique name

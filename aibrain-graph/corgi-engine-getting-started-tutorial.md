@@ -139,7 +139,7 @@ The _AI Brain Pluggable_ generates all Corgi AI system at runtime from a list of
 1. Enable the _RetroSwordsmanPluggable_ gameObject
 2. Click the _Add Component_ button and select _The Bit Cave &gt; AI &gt; AI Brain Pluggable_
 3. Drag the _RetroSwordsman AIBrain_ in the _AI Brain Graphs_ field: this is an array of elements, so you can add more than one \(one will be chosen randomly at runtime\)
-4. Editor _Play_ button and you should see the Corgi AI structure generated
+4. Hit the Editor _Play_ button and you should see the Corgi AI Brain structure generated
 
 ![](../.gitbook/assets/corgi_staring_tutorial_008.png)
 

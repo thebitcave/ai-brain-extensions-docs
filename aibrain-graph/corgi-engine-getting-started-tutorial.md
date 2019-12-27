@@ -94,13 +94,13 @@ For the _Patrol_ state:
 1. Right click on the graph canvas and select _AI &gt; Action &gt; Patrol_
 2. Check the _Avoid Falling_ value
 3. Set the _Hole Detection Offset_ x value to 1
-4. Connect the _Output_ element to the _Actions\_input of the \_Patrol_ state node
+4. Connect the _Output_ element to the _Actions_ input of the _Patrol_ state node
 
 For the _Shooting_ state:
 
 1. Right click on the graph canvas and select _AI &gt; Action &gt; Shoot_
 2. Check the _Aim At Target_ value
-3. Connect the _Output_ element to the _Actions\_input of the \_Shooting_ state node
+3. Connect the _Output_ element to the _Actions_ input of the _Shooting_ state node
 
 ![](../.gitbook/assets/corgi_starting_tutorial_005.png)
 

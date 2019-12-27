@@ -13,9 +13,9 @@ The two main actors involved in this system are:
 A Master can also be a Slave and listen to events \(even those dispatched by itself\).
 {% endhint %}
 
-####  Brain Master Ability
+####  BrainMaster Ability
 
-The **BrainMasterAbility** component lets you send state change commands to slave brains through a dedicated channel: usually this is achieved through an _AIActionChangeAIBrainStateCommand_ but you can access the _SendCommand_ method:
+The **BrainMaster** ability component lets you send state change commands to slave brains through a dedicated channel: usually this is achieved through an _AIActionChangeAIBrainStateCommand_ but you can access the _SendCommand_ method:
 
 ```csharp
 SendCommand(string channelName, string newStateName, Transform target = null)
@@ -25,9 +25,13 @@ SendCommand(string channelName, string newStateName, Transform target = null)
 * _newStateName_ is the state the AIBrain should transition in
 * _target_ is the AIBrain target \(if any\)
 
+{% hint style="info" %}
+This ability doesn't extend the regular Corgi/TopDown abilities, so it doesn't need a Character component: this means you can use anywhere you need \(i.e.: with a some trigger or any game logic\).
+{% endhint %}
+
 #### The Brain Slave Ability
 
-The **BrainSlaveAbility** component is used to receive state change commands through a dedicated channel.
+The **BrainSlave** ability component is used to receive state change commands through a dedicated channel.
 
 {% hint style="info" %}
 The slave can listen to one or more channels.

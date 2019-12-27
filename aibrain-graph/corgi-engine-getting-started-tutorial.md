@@ -26,7 +26,7 @@ To start working with the graph, you'll need to create an AI Brain Graph:
 
 ### The RetroSwordsman AI Brain Structure
 
-Select the _RetroSwordsman_ prefab in scene and look at the _AI Brain_, AI Actions and AI Decision script: we want to replicate the same structure with the AI Brain Graph:
+Select the _RetroSwordsman_ prefab in scene and look at the _AI Brain_, _AI Actions_ and _AI Decisions_ components: we want to replicate the same structure with the AI Brain Graph:
 
 * The _AI Brain_ has two states: _Patrol_ and _Shooting_
 * While in _Patrol_ the swordsman will perform an _AIActionPatrol_ action
@@ -41,7 +41,7 @@ To create the AI Brain Graph we will need these nodes:
 * Two actions
 * Two decisions
 
-#### Creating The States
+#### Creating the States
 
 First of all, let's create the two states:
 

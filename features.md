@@ -4,7 +4,7 @@ In this page you will find listed all the features of the package: all of them a
 
 ### 1. AIBrain Graph
 
-The **AI Brain Graph** system lets you create AIBrains systems by using a node system.
+The [AI Brain Graph](aibrain-graph/the-aibrain-graph-system.md) system lets you create AIBrains systems by using a node system.
 
 ![An AIBrain Graph for Corgi Engine](.gitbook/assets/corgi_aibrain_graph.png)
 
@@ -19,7 +19,7 @@ The graph includes the following features;
 
 ### 2. AIBrain Debugger
 
-The **AIBrain Debugger** system will let you peek into some of the AIBrain inner workings and test states at runtime.
+The [AIBrain Debugger](aibrain-debugger/untitled.md) system will let you peek into some of the AIBrain inner workings and test states at runtime.
 
 The debugger includes the following features:
 
@@ -31,7 +31,7 @@ The debugger includes the following features:
 
 ### 3. Master/Slave Brains
 
-The **Master/Brain** system will let you control an AIBrain \(or a group of AIBrains\) from another point in your game, usually from another AIBrain.
+The [Master/Brain](master-slave-brains/untitled.md) system will let you control an AIBrain \(or a group of AIBrains\) from another point in your game, usually from another AIBrain.
 
 The Master/Brain system includes the following features:
 

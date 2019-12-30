@@ -7,13 +7,21 @@ The _AI Brain Graph_ comes packed with four main type  of nodes:
 * _AI Action Node_
 * _AI Decision Node_
 
-Additionally, when you work with a Subgraph, you have access to:
+Additionally, you'll get some helper nodes:
+
+* _Comment Node_
+* _AI Brain State Alias Node_
+* _AI Brain Any State Node_
+
+Finally, when you work with a Subgraph, you have access to:
 
 * _AI Brain Subgraph Nodes_
 * _AI State In Nodes_
 * _AI Transition Out Nodes_
 
-### AI Brain State Nodes
+## Main Nodes
+
+### AI Brain State Node
 
 A **State** node represents a single state in the MMTools _AIBrain_.
 
@@ -38,7 +46,7 @@ The _Set as starting state_ button will set the state as the first one in the MM
 
 ![](../.gitbook/assets/node_reference_001.png)
 
-### AI Transition Nodes
+### AI Transition Node
 
 A **Transition** node represents a single transition from a state in the MMTools _AI Brain_: a state can have more than one transition.
 
@@ -64,7 +72,7 @@ This node has no attributes.
 
 ![](../.gitbook/assets/node_reference_002.png)
 
-### AI Action Nodes
+### AI Action Node
 
 **Action** nodes are graph representations of _AIAction_ components. They come with a single output element that should be connected to the state. This will tell the state itself that this action should be executed.
 
@@ -87,7 +95,7 @@ This node has no input connections.
 
 ![](../.gitbook/assets/node_reference_003%20%281%29.png)
 
-### AI Decision Nodes
+### AI Decision Node
 
 **Decision** nodes are a graph representation of _AIDecision_ components. They come with a single output element that should be connected to a state transition. This will define the condition to exit the state.
 
@@ -108,7 +116,76 @@ This node has no input connections.
 
 ![](../.gitbook/assets/node_reference_004%20%281%29.png)
 
-### AI Brain Subgraph Nodes
+## Helper Nodes
+
+### Comment Node
+
+Comment nodes have the only purpose of letting you add notes in your graph. They won't generate anything in the character AI Brain System.
+
+{% hint style="info" %}
+Clicking on the header will let you enter edit note.
+{% endhint %}
+
+#### Attributes
+
+This node has no input attributes.
+
+#### Inputs
+
+This node has no input connections.
+
+#### Outputs
+
+This node has no output connections.
+
+![](../.gitbook/assets/node_reference_008.png)
+
+### AI Brain State Alias Node
+
+The **AI Brain State Alias Node** will let you create alias elements for your states: this will avoid main spaghetti like brains when things get complicated.
+
+
+
+#### Attributes
+
+* **Available States**: the node will show a list of nodes:
+  * In the main graph all nodes and subgraph-exposed nodes will be shown
+  * In a subgraph, only inner nodes will be shown
+
+#### Inputs
+
+* **States In** \(multiple _State_ connections\): a list of entry points from other states transitions
+
+#### Outputs
+
+This node has no output connections.
+
+![](../.gitbook/assets/node_reference_010.png)
+
+### AI Brain Any State Node
+
+The **AI Brain Any State** node will let you generate Decision/Transition logic for all nodes in your graph:
+
+* If added in a main Graph, also subgraph States will be affected
+* If added in a subgraph, only subgraph States will be affected
+
+#### Attributes
+
+This node has no input attributes.
+
+#### Inputs
+
+This node has no input connections.
+
+#### Outputs
+
+* **Transitions** \(multiple _Transition_ connections\): a list of transitions that will let the system exit all included states
+
+![](../.gitbook/assets/node_reference_009.png)
+
+## Subgraph Nodes
+
+### AI Brain Subgraph Node
 
 A **Subgraph** node is a special state node, that lets you create a inner state/decision/action logic. 
 
@@ -136,7 +213,7 @@ You cannot create nested subgraphs \(i.e.: you cannot add a subgraph inside a su
 
 * **Transition Out** \(list of single _Transition_ connections\): a dynamically generated list of transition connections \(see _AI Transition Out Nodes_\)
 
-### AI State In Nodes
+### AI State In Node
 
 The **AI State In** node exposes an _AI Brain State_ node inside a subgraph to the parent brain graph.
 
@@ -158,7 +235,7 @@ This node has no input connections.
 
 * **Input** \(single _State_ connection\): this node will generate a _State In_ connection in the subgraph node of the parent graph
 
-### AI Transition Out Nodes
+### AI Transition Out Node
 
 The **AI Transition Out** node exposes an _AI Transition_ node connection inside a subgraph to the parent brain graph.
 

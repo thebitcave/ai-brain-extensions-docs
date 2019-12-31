@@ -20,3 +20,7 @@
 
 * [Using Master/Slave AIBrains](master-slave-brains/untitled.md)
 
+## Additional Utilities
+
+* [Editor Resources](additional-utilities/editor-resources.md)
+

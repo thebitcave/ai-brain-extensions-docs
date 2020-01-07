@@ -24,6 +24,10 @@ When a node is selected, it will automatically expand to show all available prop
 * Right click on a free spot in the graph/subgraph canvas
 * Select _Enable Node Collapsing_/_Disable Node Collapsing_
 
+#### xNode Preferences
+
+The AIBrain Graph system is based on [xNode](https://github.com/Siccity/xNode), an open-source project by [Thor Brigsted](https://github.com/Siccity): some of the settings can be configured through the _Preferences_ panel \(In the _Preferences_ panel, select _Node Editor_\).
+
 \_\_
 
 

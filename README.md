@@ -8,7 +8,7 @@ Welcome to the _AIBrain Extensions_ for [MoreMountains](https://moremountains.co
  This project is maintained by [Marco Secchi](http://marcosecchi.it/) and it is free and open-source. If you find it useful, please consider supporting it on [Patreon](https://www.patreon.com/thebitcave) or [GitHub Sponsors](https://github.com/sponsors/marcosecchi/).
 {% endhint %}
 
-The project includes a set of tool that will \(hopefully\) ease your workflow with the AIBrain tools.
+The project includes a set of tools that will \(hopefully\) ease your workflow with the AIBrain system.
 
 ## What's Corgi Engine?
 

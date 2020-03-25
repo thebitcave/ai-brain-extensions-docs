@@ -23,4 +23,5 @@
 ## Additional Utilities
 
 * [Editor Resources](additional-utilities/editor-resources.md)
+* [Tips&Tricks](additional-utilities/tips-and-tricks.md)
 
